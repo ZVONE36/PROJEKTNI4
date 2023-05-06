@@ -76,3 +76,15 @@ def unos_telefona(poruka):
 
         else:
             return broj
+
+def unos_emaila(poruka):
+    while True:
+        try:
+            email = input(poruka)
+            index = email.index('@')
+
+        except ValueError:
+            print("Uneseni mail mora sadrzavati @.")
+
+        else:
+            return email
